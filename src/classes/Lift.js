@@ -25,18 +25,39 @@ class Lift {
     this.#sets = sets
   }
 
+  /**
+   * THis method updates the weight of the lift.
+   *
+   * @param {number} updatedWeight     The new weight of the lift.
+   * @param {string} updatedWeightUnit The new weight unit of the lift.
+   */
   updateLiftWeight (updatedWeight, updatedWeightUnit) {
     this.#weight = new Weight(updatedWeight, updatedWeightUnit)
   }
 
+  /**
+   * This method updates the reps of the lift.
+   *
+   * @param {number} updatedReps The new reps of the lift.
+   */
   updateLiftReps (updatedReps) {
     this.#reps = updatedReps
   }
 
+  /**
+   * This method updates the sets of the lift.
+   *
+   * @param {number} updatedSets The new sets of the lift.
+   */
   updateLiftSets (updatedSets) {
     this.#sets = updatedSets
   }
 
+  /**
+   * This method returns the lift stats (CURRENT).
+   *
+   * @returns {object} The lift stats (lift, weight, reps, sets).
+   */
   getLiftStats () {
     return {
       lift: this.#lift,
