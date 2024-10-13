@@ -31,6 +31,15 @@ class Lift {
   }
 
   /**
+   * This method returns the lifts weight.
+   *
+   * @returns {Weight} The lifts weight.
+   */
+  getWeight () {
+    return this.#weight
+  }
+
+  /**
    * This method validates the lift to make sure it is a string and not empty.
    *
    * @param {string} lift The lift to validate.
