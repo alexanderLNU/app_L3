@@ -1,6 +1,6 @@
 import Lift from '../classes/Lift.js'
 
-describe('Lift Class', () => {
+describe('Lift Class tests', () => {
   test('Should create a new instance of Lift, and also be in correct props', () => {
     const lift = new Lift('Bench Press', 100, 'kg', 8, 4)
     const liftStats = lift.getLiftStats()
