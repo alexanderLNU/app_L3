@@ -25,13 +25,16 @@ describe('LiftSession tests', () => {
     const lifts = liftSession.getSessionLifts()
 
     expect(lifts.length).toBe(2)
+
     expect(lifts[0].lift).toBe('Bench Press')
-    expect(lifts[0].weight).toBe('90 kg')
+    expect(lifts[0].weight.weight).toBe(90)
+    expect(lifts[0].weight.weightUnit).toBe('kg')
     expect(lifts[0].reps).toBe(8)
     expect(lifts[0].sets).toBe(4)
 
     expect(lifts[1].lift).toBe('Pecken')
-    expect(lifts[1].weight).toBe('50 kg')
+    expect(lifts[1].weight.weight).toBe(50)
+    expect(lifts[1].weight.weightUnit).toBe('kg')
     expect(lifts[1].reps).toBe(12)
     expect(lifts[1].sets).toBe(4)
   })

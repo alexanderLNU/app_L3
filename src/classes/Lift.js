@@ -122,7 +122,7 @@ class Lift {
   getLiftStats () {
     return {
       lift: this.#lift,
-      weight: this.#weight.toString(),
+      weight: this.#weight,
       reps: this.#reps,
       sets: this.#sets
     }
