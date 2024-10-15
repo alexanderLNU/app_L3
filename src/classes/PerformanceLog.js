@@ -28,6 +28,22 @@ class PerformanceLog {
   }
 
   /**
+   * This method is a getter for all lifts with a specific name from all sessions added.
+   *
+   * @param {string} liftName Name of the lift that is wanted.
+   * @returns {Array}         Array of all lifts with the name that is wanted.
+   */
+  getLiftsByName (liftName) {
+    let wantedLifts = []
+    this.#collectionOfSessions.forEach(session => {
+      const lifts = session.getSessionLifts()
+      const filteredWantedLifts = lifts.filter(lift => lift.lift === liftName)
+      wantedLifts = wantedLifts.concat(filteredWantedLifts)
+    })
+    return wantedLifts
+  }
+
+  /**
    * This method returns the heaviest lift in the PerformanceLog.
    *
    * @returns {string} The heaviest lift in the PerformanceLog.
@@ -57,6 +73,23 @@ class PerformanceLog {
     this.validateLogNotEmpty()
     const averageWeight = this.#weightCollection.getAverageWeight(weightUnit).toString()
     return parseFloat(averageWeight).toFixed(2) + ' ' + weightUnit
+  }
+
+  /**
+   * This method gets the heaviest lift for a specific wanted lift.
+   *
+   * @param {string} liftName Name of the lift.
+   * @returns {string}        The heaviest lift for the specific lift.
+   */
+  getHeaviestLiftForSpecificLift (liftName) {
+    const specificLift = this.getLiftsByName(liftName)
+    this.validateSpecificLiftIsPresent(specificLift, liftName)
+
+    const weightCollection = new WeightCollection()
+    specificLift.forEach(lift => {
+      weightCollection.addWeightToCollection(lift.weight)
+    })
+    return weightCollection.getHeaviestWeight().toString()
   }
 
   /**
@@ -100,6 +133,18 @@ class PerformanceLog {
   validateSessionInstance (liftSession) {
     if (!(liftSession instanceof LiftSession)) {
       throw new Error('You must enter a valid instance of LiftSession!')
+    }
+  }
+
+  /**
+   * THis method validates that there is a lift with the name that is wanted.
+   *
+   * @param {Array} specificLift Array of lifts with the name that is wanted.
+   * @param {string} liftName    The name of the lift that is wanted.
+   */
+  validateSpecificLiftIsPresent (specificLift, liftName) {
+    if (specificLift.length === 0) {
+      throw new Error(`There is no lifts of ${liftName} in the log!`)
     }
   }
 }
