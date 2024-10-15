@@ -90,6 +90,15 @@ describe('PerformanceLog', () => {
     expect(averageWeight).toBe('189.17 kg')
   })
 
+  test('After adding lift sessions, the lightest Bench Press should be returned', () => {
+    performanceLog.addLiftSession(liftSession1)
+    performanceLog.addLiftSession(liftSession2)
+    performanceLog.addLiftSession(liftSession3)
+
+    const lightestBenchPress = performanceLog.getLightestLiftForSpecificLift('Bench Press')
+    expect(lightestBenchPress).toBe('175 kg')
+  })
+
   test('If an invalid lift session is trying to be added, throw error', () => {
     expect(() => performanceLog.addLiftSession({})).toThrow(
       'You must enter a valid instance of LiftSession!'

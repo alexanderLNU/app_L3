@@ -93,6 +93,23 @@ class PerformanceLog {
   }
 
   /**
+   * This method gets the lightest lift for a specific wanted lift.
+   *
+   * @param {string} liftName Name of the lift.
+   * @returns {string}        The lightest lift for the specific lift.
+   */
+  getLightestLiftForSpecificLift (liftName) {
+    const specificLift = this.getLiftsByName(liftName)
+    this.validateSpecificLiftIsPresent(specificLift, liftName)
+
+    const weightCollection = new WeightCollection()
+    specificLift.forEach(lift => {
+      weightCollection.addWeightToCollection(lift.weight)
+    })
+    return weightCollection.getLightestWeight().toString()
+  }
+
+  /**
    * This method adds all lifts from a LiftSession to the collection of weights.
    *
    * @param {LiftSession} liftSession The LiftSession that lifts should be added from.
