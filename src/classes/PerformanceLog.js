@@ -110,6 +110,25 @@ class PerformanceLog {
   }
 
   /**
+   * This method gets the average weight for a specific wanted lift.
+   *
+   * @param {string} liftName   Name of the lift.
+   * @param {string} weightUnit Unit of the weight.
+   * @returns {string}          The average weight for the specific lift.
+   */
+  getAverageWeightForSpecificLift (liftName, weightUnit = 'kg') {
+    const specificLift = this.getLiftsByName(liftName)
+    this.validateSpecificLiftIsPresent(specificLift, liftName)
+
+    const weightCollection = new WeightCollection()
+    specificLift.forEach(lift => {
+      weightCollection.addWeightToCollection(lift.weight)
+    })
+    const avgWeight = weightCollection.getAverageWeight(weightUnit)
+    return parseFloat(avgWeight).toFixed(2) + ' ' + weightUnit
+  }
+
+  /**
    * This method adds all lifts from a LiftSession to the collection of weights.
    *
    * @param {LiftSession} liftSession The LiftSession that lifts should be added from.
