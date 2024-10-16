@@ -28,6 +28,15 @@ class PerformanceLog {
   }
 
   /**
+   * This method returns all names of the LiftSessions in the PerformanceLog.
+   *
+   * @returns {Array} Array with all the session names.
+   */
+  getNameOfAllSessions () {
+    return this.#collectionOfSessions.map(session => session.nameOfSession)
+  }
+
+  /**
    * This method is a getter for all lifts with a specific name from all sessions added.
    *
    * @param {string} liftName Name of the lift that is wanted.
@@ -150,6 +159,27 @@ class PerformanceLog {
     this.validateSessionInstance(liftSession)
     this.#collectionOfSessions.push(liftSession)
     this.addLiftSessionWeightsToCollection(liftSession)
+  }
+
+  /**
+   * This method removes a LiftSession from PerformanceLog.
+   *
+   * @param {number} indexOfSession Index of the session that should be removed.
+   */
+  removeASessionByIndex (indexOfSession) {
+    this.validateSessionIndex(indexOfSession)
+    this.#collectionOfSessions.splice(indexOfSession, 1)
+  }
+
+  /**
+   * This method validates if the index of the session is valid.
+   *
+   * @param {number} indexOfSession The index that is being validated.
+   */
+  validateSessionIndex (indexOfSession) {
+    if (indexOfSession < 0 || indexOfSession >= this.#collectionOfSessions.length) {
+      throw new Error('The session index is invalid, enter a valid one!')
+    }
   }
 
   /**
