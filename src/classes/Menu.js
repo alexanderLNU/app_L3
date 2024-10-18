@@ -212,8 +212,8 @@ class Menu {
    * This method validates if the index of the session is valid.
    *
    * @param {number} index          The index that is being validated.
-   * @param {number} totalSessions The total number sessiosn that are availible.
-   * @returns {boolean}       True if the index is valid, otherwise false.
+   * @param {number} totalSessions  The total number sessiosn that are availible.
+   * @returns {boolean}             True if the index is valid, otherwise false.
    */
   validateSessionIndex (index, totalSessions) {
     return !isNaN(index) && index >= 0 && index < totalSessions
