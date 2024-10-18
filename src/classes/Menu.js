@@ -31,7 +31,7 @@ class Menu {
 
       switch (usersChoice) {
         case '1':
-          this.addNewLiftingSession() // Fixa imon
+          this.addNewLiftingSession()
           break
         case '2':
           this.viewPerformanceStats() // Fixa imon
@@ -51,6 +51,34 @@ class Menu {
       }
     }
   }
+
+  addNewLiftingSession () {
+    const nameOfSession = readlineSync.question('Enter the name of your lifting session: ')
+    const liftingSession = new LiftSession(nameOfSession)
+    let addLifts = true
+
+    while (addLifts) {
+      const nameOfLift = readlineSync.question('Enter the name of the lift: ')
+      const weightLifted = readlineSync.question('Enter the weight lifted: ')
+      const weightUnit = readlineSync.question('Enter the unit of the weight (kg/lbs): ')
+      const repsDone = readlineSync.question('Enter the reps done: ')
+      const setsDone = readlineSync.question('Enter the sets done: ')
+
+      const theLift = new Lift(nameOfLift, weightLifted, weightUnit, repsDone, setsDone)
+      liftingSession.addLiftToSession(theLift)
+
+      const additionalLift = readlineSync.question('Do you want to add another lift to the session? (y/n): ')
+      if (additionalLift.toLowerCase() !== 'y') {
+        addLifts = false
+      }
+    }
+
+    this.#performanceLog.addLiftSession(liftingSession)
+    console.log('You have successfully added the lifting session!')
+  }
+  // stats
+  // viewalllift
+  // removeone
 }
 
 export default Menu
