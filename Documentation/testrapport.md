@@ -15,3 +15,6 @@ Här presenteras en bild av mina genomförda aktiviteter vad gäller korrigering
 ![Bild 3 över ändringar i modulen (L2)](objektatgardat.png)
 
 ## Manuella tester för Menu.js
+
+1. Starta applikationen:
+   `node src/main.js`
