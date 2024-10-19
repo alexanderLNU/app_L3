@@ -2,7 +2,7 @@
 
 ## Introduktion
 
-I detta dokument kommer jag att redovisa mina ändringar jag gjort på modulen (L2), samt manuella tester för Menu.js-klassen, sedan även coverage för de automatiska tester för resterande klasser skrivna med Jest. OBS! Reflektioner kring kapitel ur Clean Code och reflektion kring denna appens, samt ändringar i modulen (L2) återfinns i reflektionsdokumentet.
+I detta dokument kommer jag att redovisa mina ändringar jag gjort på modulen (L2), coverage för de automatiska tester för resterande klasser skrivna med Jest, samt manuella tester för Menu-klassen. **OBS!** Reflektioner kring kapitel ur Clean Code och reflektion kring denna appens, samt ändringar i modulen (L2) återfinns i reflektionsdokumentet.
 
 ## Förändringar på Modulen L2
 
@@ -13,6 +13,10 @@ Här presenteras en bild av mina genomförda aktiviteter vad gäller korrigering
 ![Bild 1 över ändringar i modulen (L2)](namngivning.png)
 ![Bild 2 över ändringar i modulen (L2)](forenkladefunktioner.png)
 ![Bild 3 över ändringar i modulen (L2)](objektatgardat.png)
+
+## Coverage för automatiska tester
+
+![Bild över coverage](..........)
 
 ## Manuella tester för Menu.js
 
