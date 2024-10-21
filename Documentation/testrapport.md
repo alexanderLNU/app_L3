@@ -16,6 +16,8 @@ Här presenteras en bild av mina genomförda aktiviteter vad gäller korrigering
 
 ## Coverage för automatiska tester
 
+Denna coverage avser samtliga klasser utom "Menu.js".
+
 ![Bild över coverage](..........)
 
 ## Manuella tester för Menu.js

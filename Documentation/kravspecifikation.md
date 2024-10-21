@@ -41,7 +41,7 @@ Jag har delat upp kravspecifikationen i olika rubriker likt det individuella pro
 - JSDoc kommer användas genom hela utvecklingen.
 - README-fil kommer finnas tillgänglig för applikationen på Github.
 - Denna vision och kravspecifikation kommer finnas tillgänglig på Github.
-- Reflektion kommer finnas tillgänglig för Clean Code kapitel.
+- Reflektion kommer finnas tillgänglig i reflection.md för Clean Code kapitel.
 - Sammanställning på vilka förändringar jag gjort på modulen (L2) kommer finnas tillgänglig på Github.
 
 ### Externa Krav
