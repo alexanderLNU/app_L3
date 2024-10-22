@@ -36,6 +36,8 @@ Genomför samtliga tester i följd, efter varandra för att korrekt kunna testa 
 | Test 6   | Radera en lifting session                 | Användaren kan radera/ta bort en registrerad lifting session | Godkänt                  |
 | Test 7   | Avsluta applikationen                     | Applikationen avslutas                                       | Godkänt                  |
 
+Nedan följer instruktioner för vardera test som kontrollerats i tabellen ovan.
+
 ## Test 1 - Starta applikationen
 
 Målet med detta test är att applikationen går att starta och att användaren presenteras med huvudmenyn.
