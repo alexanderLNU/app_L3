@@ -24,6 +24,18 @@ Denna coverage avser samtliga klasser utom "Menu.js".
 
 Genomför samtliga tester i följd, efter varandra för att korrekt kunna testa hela applikationen.
 
+## Tabell över manuella tester
+
+| **Test** | **Vad testas?**                           | **Förväntat resultat/Output**                                | **Godkänt/Icke-godkänt** |
+| -------- | ----------------------------------------- | ------------------------------------------------------------ | ------------------------ |
+| Test 1   | Starta applikationen                      | Applikationen startar och visar huvudmenyn                   | Godkänt                  |
+| Test 2   | Lägg till en ny lifting session           | Användaren kan lägga till en lifting session                 | Godkänt                  |
+| Test 3   | Visa registrerade lifting sessions        | Applikationen visar alla registrerade lifting sessions       | Godkänt                  |
+| Test 4   | Visa personlig statistik                  | Applikationen visar statistik                                | Godkänt                  |
+| Test 5   | Lägg till flera övningar och se statistik | Applikationen visar statistik på flera övningar              | Godkänt                  |
+| Test 6   | Radera en lifting session                 | Användaren kan radera/ta bort en registrerad lifting session | Godkänt                  |
+| Test 7   | Avsluta applikationen                     | Applikationen avslutas                                       | Godkänt                  |
+
 ## Test 1 - Starta applikationen
 
 Målet med detta test är att applikationen går att starta och att användaren presenteras med huvudmenyn.
