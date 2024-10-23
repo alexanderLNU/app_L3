@@ -18,7 +18,7 @@ Här presenteras en bild av mina genomförda aktiviteter vad gäller korrigering
 
 Denna coverage avser samtliga klasser utom "Menu.js".
 
-![Bild över coverage](..........)
+![Bild över coverage](../images/jestcoveragel3.png)
 
 ## Manuella tester för Menu.js
 
