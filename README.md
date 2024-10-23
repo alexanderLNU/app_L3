@@ -6,7 +6,7 @@
 
 Här finner du all detaljerad dokumentation kring appen.
 
-[Kravspecifikation-och-Vision](./Documentation/kravspecifikation.md)
+[Kravspecifikation och Vision](./Documentation/kravspecifikation.md)
 
 [Reflektion](./Documentation/reflection.md)
 
