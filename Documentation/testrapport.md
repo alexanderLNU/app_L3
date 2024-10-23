@@ -104,7 +104,7 @@ All of your lifting sessions:
 1. Välj alternativ 2 i huvudmenyn.
 
 **Förväntat resultat/Output**
-Applikationen ska skriva ut flera 6 olika alternativ för att visa användaren statistik. Det ska presenteras som följande:
+Applikationen ska skriva ut 6 olika alternativ för att visa användaren statistik. Det ska presenteras som följande:
 
 ```
 Your performance stats:
