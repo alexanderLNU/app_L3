@@ -32,7 +32,7 @@ I och med
 
 #### **Allmänn reflektion**
 
-Kapitel 3 handlar i stora drag om hur funktioner skrivs som bäst och vad man ska tänka på kring det. De ska göra en sak, inte vara för stora, ha en konsekvent abstraktionsnivå, samt att funktionerna ska komma som en berättelse nästan i följd. Kapitlet förklarar att argument ska minimeras och istället fokusera på namn som är beskrivande. Kapitlet berör också att funktioner inte ska ha sidoeffekter och i största allmänhet handlar det om hur vi skriver funktioner för att uppnå bättre och renare kod som är lättförståelig.
+Kapitel 3 handlar i stora drag om hur funktioner skrivs bäst och vad man ska tänka på kring det. De ska göra en sak, inte vara för stora, ha en konsekvent abstraktionsnivå, samt att funktionerna ska komma som en berättelse nästan i följd. Kapitlet förklarar att argument ska minimeras och istället fokusera på namn som är beskrivande. Kapitlet berör också att funktioner inte ska ha sidoeffekter och i största allmänhet handlar det om hur vi skriver funktioner för att uppnå bättre och renare kod som är lättförståelig.
 
 ---
 
@@ -57,3 +57,25 @@ Här är ett exempel på en valideringsmetod jag tycker speglar precis det som k
 I detta exempel finns både positivt och negativt. Jag vill beröra detta för att påvisa att jag är medveten kring det. Jag tycker den kan få positiv feedback då den gör det som den säger, namngivning är bra och den är relativt lätt att följa enligt mig. Jag tycker också att den är logisk stegvis, att koden faktiskt "berättar en historia". Men även här går att förbättra exempelvis att den gör flera saker även om jag brytit ut vissa saker. Samt att det är olika abstraktionsnivåer från högnivåkoncept till lågnivå. Jag ville ta med detta för att visa bristerna så väl som det goda då jag fortfarande lär mig.
 
 ![Bild över coverage](../images/getavgforspecific.png)
+
+## Kapitel 4 - Comments
+
+#### **Allmänn reflektion**
+
+Detta
+
+---
+
+#### **L2 reflektion**
+
+För
+
+---
+
+#### **L3 reflektion**
+
+![Bild över coverage]()
+
+![Bild över coverage]()
+
+![Bild över coverage]()
