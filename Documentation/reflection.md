@@ -77,3 +77,21 @@ Jag har använt skolans ESLint vilket innebär att alla funktioner måste ha JSD
 Här är exempel på hur min JSDoc kan se ut:
 
 ![Kod-screenshot](../images/commentsexample.png)
+
+## Kapitel 5 - Formatting
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
