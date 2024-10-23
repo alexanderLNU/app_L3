@@ -24,11 +24,37 @@ I och med ändringarna i L2 har jag försökt tänka på namngivningen genom hel
 
 Exemplena nedan anser jag till stor del uppfyller Intention-Revealing Names, Avoid Disinformation och Use Pronounceable and searchable names. Min bedömning är att man förstår vad metoden gör utan att se koden, endast på namnet, det är vad det ska vara och är även sökbart och igenkänt.
 
-![Bild över coverage](getheaviestlforspecific.png)
+![Bild över coverage](../images/getheaviestlforspecific.png)
 
-![Bild över coverage](getheaviestl.png)
+![Bild över coverage](../images/getheaviestl.png)
 
-![Bild över coverage](getnumberofs.png)
+![Bild över coverage](../images/getnumberofs.png)
+
+## Kapitel 3 - Functions
+
+#### **Allmänn reflektion**
+
+Detta kapitel behandlar
+
+---
+
+#### **L2 reflektion**
+
+För just detta kapitel
+
+---
+
+#### **L3 reflektion**
+
+I och med ändringarna i L2 har jag försökt tänka på namngivningen genom hela utvecklingsprocessen och nedan kommer screenshots på tydliga exempel där jag tycker att jag annamat det för att redan nu ha tydliga namn som är relevanta och följer reglerna i Clean Code så väl som möjligt.
+
+Exemplena nedan anser jag till stor del uppfyller Intention-Revealing Names, Avoid Disinformation och Use Pronounceable and searchable names. Min bedömning är att man förstår vad metoden gör utan att se koden, endast på namnet, det är vad det ska vara och är även sökbart och igenkänt.
+
+![Bild över coverage](bild1)
+
+![Bild över coverage](bild2)
+
+![Bild över coverage](bild3)
 
 1. Reflektera över alla ändringar jag gjort i modulen (L2).
 2. Skriv hur varje kapitel 2-11 i Clean Code påverkat eller inte påverkat min kod.

@@ -10,9 +10,9 @@ Jag valde att sammanställa den feedback jag fick av min review-partner, samt å
 
 Här presenteras en bild av mina genomförda aktiviteter vad gäller korrigeringar på modulen (L2):
 
-![Bild 1 över ändringar i modulen (L2)](namngivning.png)
-![Bild 2 över ändringar i modulen (L2)](forenkladefunktioner.png)
-![Bild 3 över ändringar i modulen (L2)](objektatgardat.png)
+![Bild 1 över ändringar i modulen (L2)](../images/namngivning.png)
+![Bild 2 över ändringar i modulen (L2)](../images/forenkladefunktioner.png)
+![Bild 3 över ändringar i modulen (L2)](../images/objektatgardat.png)
 
 ## Coverage för automatiska tester
 
