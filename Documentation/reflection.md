@@ -6,22 +6,28 @@ Samtliga ändringar jag gjort på modulen finns i testrapport.md som bilder för
 
 ## Kapitel 2 - Meaningful Names
 
-**Allmänn reflektion**
+#### **Allmänn reflektion**
+
 Detta kapitel behandlar kunskap kring att använda meningsfulla namn i kod, även vikten att de är intentionsavslöjande. Enligt boken Clean Code är det viktigt att funktioner, klasser och variabler faktiskt reflekterar sitt syfta och hur de används i koden på ett tydligt sätt. Det i sin tur leder till att vi behöver förlita oss mindre på kommentarer överallt, och koden i sin helhet blir mer lättförståelig. Kapitlet tar även upp vikten av att inte använda namn som kan vilseleda betraktaren, samt vikten av att namnen ska vara sökbara och undvika exempelvis förkortningar som bara utvecklaren själv förstår.
 
 ---
 
-**L2 reflektion**
+#### **L2 reflektion**
+
 För just detta kapitel tycker jag att **Class Names** är av hög relevans då jag faktiskt ändrade min tidigare kod i modulen på grund av denna regel från boken. De beskriver tydligt att klassnamn ska vara "nouns", inte verb som exempelvis Manager. Därav ändrade jag namn på den klassen till WeightCollection. Inte nog med det så ändrade jag även tre metodnamn som faktiskt kunde uppfattas olika beroende på individen, därav ändrade jag namngivning på de för att det skulle bli ännu mer intentions-avslöjande. addWeight() --> addWeightToCollection () för tydlighet. removeWeight () --> removeWeightFromCollection () för tydlighet. add () --> addWeightsTogether () för tydlighet. Namnen blev längre som en konsekvens av detta men jag anser att tydligheten och intentionsavslöjandet väger tyngre.
 
 ---
 
-**L3 reflektion**
+#### **L3 reflektion**
+
 I och med ändringarna i L2 har jag försökt tänka på namngivningen genom hela utvecklingsprocessen och nedan kommer screenshots på tydliga exempel där jag tycker att jag annamat det för att redan nu ha tydliga namn som är relevanta och följer reglerna i Clean Code så väl som möjligt.
 
 Exemplena nedan anser jag till stor del uppfyller Intention-Revealing Names, Avoid Disinformation och Use Pronounceable and searchable names. Min bedömning är att man förstår vad metoden gör utan att se koden, endast på namnet, det är vad det ska vara och är även sökbart och igenkänt.
+
 ![Bild över coverage](getheaviestlforspecific.png)
+
 ![Bild över coverage](getheaviestl.png)
+
 ![Bild över coverage](getnumberofs.png)
 
 1. Reflektera över alla ändringar jag gjort i modulen (L2).
