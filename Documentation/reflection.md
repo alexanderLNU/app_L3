@@ -20,7 +20,9 @@ För just detta kapitel tycker jag att **Class Names** är av hög relevans då 
 
 #### **L3 reflektion**
 
-I och med
+I och med ändringarna i L2 har jag försökt tänka på namngivningen genom hela utvecklingsprocessen och nedan kommer screenshots på tydliga exempel där jag tycker att jag annamat det för att redan nu ha tydliga namn som är relevanta och följer reglerna i Clean Code så väl som möjligt.
+
+Exemplena nedan anser jag till stor del uppfyller Intention-Revealing Names, Avoid Disinformation och Use Pronounceable and searchable names. Min bedömning är att man förstår vad metoden gör utan att se koden, endast på namnet, det är vad det ska vara och är även sökbart och igenkänt.
 
 ![Bild över coverage](../images/getheaviestlforspecific.png)
 
@@ -73,6 +75,8 @@ För
 ---
 
 #### **L3 reflektion**
+
+Hej
 
 ![Bild över coverage]()
 
