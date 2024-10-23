@@ -24,11 +24,11 @@ I och med ändringarna i L2 har jag försökt tänka på namngivningen genom hel
 
 Exemplena nedan anser jag till stor del uppfyller Intention-Revealing Names, Avoid Disinformation och Use Pronounceable and searchable names. Min bedömning är att man förstår vad metoden gör utan att se koden, endast på namnet, det är vad det ska vara och är även sökbart och igenkänt.
 
-![Bild över coverage](../images/getheaviestlforspecific.png)
+![Kod-screenshot](../images/getheaviestlforspecific.png)
 
-![Bild över coverage](../images/getheaviestl.png)
+![Kod-screenshot](../images/getheaviestl.png)
 
-![Bild över coverage](../images/getnumberofs.png)
+![Kod-screenshot](../images/getnumberofs.png)
 
 ## Kapitel 3 - Functions
 
@@ -54,32 +54,26 @@ I testrapport.md syns screenshots på vad jag åtgärdat i L2 och just i denna s
 
 Här är ett exempel på en valideringsmetod jag tycker speglar precis det som kapitel 3 handlar om, att funktioner ska göra en sak, och göra den bra. Bryta ut större funktioner till mindre och så vidare.
 
-![Bild över coverage](../images/validatesession.png)
+![Kod-screenshot](../images/validatesession.png)
 
 I detta exempel finns både positivt och negativt. Jag vill beröra detta för att påvisa att jag är medveten kring det. Jag tycker den kan få positiv feedback då den gör det som den säger, namngivning är bra och den är relativt lätt att följa enligt mig. Jag tycker också att den är logisk stegvis, att koden faktiskt "berättar en historia". Men även här går att förbättra exempelvis att den gör flera saker även om jag brytit ut vissa saker. Samt att det är olika abstraktionsnivåer från högnivåkoncept till lågnivå. Jag ville ta med detta för att visa bristerna så väl som det goda då jag fortfarande lär mig.
 
-![Bild över coverage](../images/getavgforspecific.png)
+![Kod-screenshot](../images/getavgforspecific.png)
 
 ## Kapitel 4 - Comments
 
 #### **Allmänn reflektion**
 
-Detta
+Kapiteltet berör vikten av kommentarer och förklarar att det är en nödvändighet att använda sig utav det men att det ändå ska användas sparsamt. Jag tolkar boken som att de säger att kommentarer är ett typ av misslyckande då koden i sig själv inte "berättar allt". Jag håller med att fokus borde ligga på att skriva tydlig kod och inte lita fullt ut på att kommentarer ska täcka allt då det i en förlängning blir svårt att hålla kommentarerna uppdatterade. Boken menar att koden är den källan man kan lita på.
 
 ---
 
-#### **L2 reflektion**
+#### **L2 reflektion och L3**
 
-För
+Jag har använt skolans ESLint vilket innebär att alla funktioner måste ha JSDoc. Jag är väl medveten om att det används för mycket där min kod redan är självförklarande och tydlig nog. Men jag har valt att se det som att jag följer en kodstandard, som att jag arbetade på ett företag, där jag måste följa dessa lintregler och anpassa mig. Så det är positivt i sig, men det blir helt klart överflödigt med kommentarer och med hänvisning till boken bör koden vara tydlig och uttrycksfull för att ersätta överflödiga kommentarer helt enkelt.
 
 ---
 
-#### **L3 reflektion**
+Här är exempel på hur min JSDoc kan se ut:
 
-Hej
-
-![Bild över coverage]()
-
-![Bild över coverage]()
-
-![Bild över coverage]()
+![Kod-screenshot](../images/commentsexample.png)
