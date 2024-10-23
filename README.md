@@ -21,6 +21,7 @@ Här finner du all detaljerad dokumentation kring appen och vad du kan göra med
 Så här kommer du igång med **"Alexander Strength Lifting Tool"**!
 
 **Innan du påbörjar installationen!**
+
 Vänligen kontrollera att du inte har en äldre version av Node än version 14.
 
 ```bash
