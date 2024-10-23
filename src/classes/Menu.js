@@ -83,7 +83,7 @@ class Menu {
         console.log('You have to enter a valid weight.')
         continue
       }
-      const weightUnit = readlineSync.question('Enter the unit of the weight (kg/lbs): ')
+      const weightUnit = readlineSync.question('Enter the unit of the weight (kg/lb): ')
       const repsDone = parseInt(readlineSync.question('Enter the reps done: '), 10)
       const setsDone = parseInt(readlineSync.question('Enter the sets done: '), 10)
 
