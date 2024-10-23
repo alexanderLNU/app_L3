@@ -37,4 +37,20 @@ describe('Lift Class tests', () => {
 
     expect(liftStats.weight.toString()).toBe('100 kg')
   })
+
+  test('If lift is empty string, throw error', () => {
+    expect(() => new Lift('', 70, 'kg', 10, 3)).toThrow('You must enter the lift you performed and not leave it empty!')
+  })
+
+  test('If sets are equal to 0 or less, throw error', () => {
+    expect(() => new Lift('Bench Press', 200, 'lb', 12, 0)).toThrow('You have to enter the sets you performed!')
+  })
+
+  test('If reps are equal to 0 or less, throw error', () => {
+    expect(() => new Lift('Bench Press', 200, 'lb', 0, 3)).toThrow('You have to enter the reps you performed!')
+  })
+
+  test('If weight is zero or less, throw error', () => {
+    expect(() => new Lift('Bench Press', 0, 'kg', 8, 4)).toThrow('You have to enter the weight you lifted!')
+  })
 })

@@ -119,4 +119,16 @@ describe('PerformanceLog', () => {
       'The log is empty, you must add at least one session to the log!'
     )
   })
+
+  test('If trying to remove a session with invalid index, throw error', () => {
+    performanceLog.addLiftSession(liftSession1)
+    expect(() => performanceLog.removeASessionByIndex(2)).toThrow('The session index is invalid, enter a valid one!')
+  })
+
+  test('Session should be removed by index', () => {
+    performanceLog.addLiftSession(liftSession1)
+    performanceLog.addLiftSession(liftSession2)
+    performanceLog.removeASessionByIndex(0)
+    expect(performanceLog.getNumberOfSessions()).toBe(1)
+  })
 })
