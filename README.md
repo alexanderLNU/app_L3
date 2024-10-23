@@ -75,7 +75,7 @@ Här kommer ett scenario och exempel på användning av appen. Du kan göra mer 
 **Steg 2:** Starta applikationen med kommandot:
 `node src/main.js`
 
-**Förväntat resultat/Output**
+**Förväntat resultat/Output:**
 
 Applikationen ska nu ha skrivit ut följande i terminalen:
 
@@ -93,7 +93,7 @@ Choose one of the following (1-5):
 
 **Steg 3:** Välj alternativ 1 i huvudmenyn "Add new lifting session"
 
-**Din input**
+**Din input:**
 
 Efter att ha valt alternativ 1, kommer applikationen be dig om information för att skapa en ny lifting session. Använd följande input-data för de olika frågeställningarna:
 
@@ -107,7 +107,7 @@ Enter the sets done: 4
 Do you want to add another lift to the session? (y/n): n
 ```
 
-**Förväntat resultat/Output**
+**Förväntat resultat/Output:**
 
 Efter du valt "n" på sista frågeställningen ska applikationen skriva ut:
 
@@ -117,7 +117,7 @@ You have successfully added the lifting session!
 
 **Steg 4:** Välj alternativ 2 i huvudmenyn
 
-**Förväntat resultat/Output**
+**Förväntat resultat/Output:**
 
 Applikationen ska skriva ut 6 olika alternativ för att visa användaren statistik. Det ska presenteras som följande:
 
@@ -134,7 +134,7 @@ Choose one of the following (1-6):
 
 **Steg 5:** Välj alternativ 1.
 
-**Förväntat resultat/Output**
+**Förväntat resultat/Output:**
 
 The heaviest lift out of all lifts is: 90 kg
 
