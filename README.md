@@ -68,13 +68,15 @@ Choose one of the following (1-5):
 
 Här kommer ett scenario och exempel på användning av appen. Du kan göra mer än vad som illustreras här men detta kan hjälpa dig att komma igång med användandet på ett smidigt sätt!
 
-#### Skapa en "Lifting Session" med Bench Press och se att statistiken för tyngsta lyft skrivs ut
+#### SCENARIO: Skapa en "Lifting Session" med Bench Press och se att statistiken för tyngsta lyft skrivs ut
 
 **Steg 1:** Öppna terminalen i Visual Studio Code.
+
 **Steg 2:** Starta applikationen med kommandot:
 `node src/main.js`
 
 **Förväntat resultat/Output**
+
 Applikationen ska nu ha skrivit ut följande i terminalen:
 
 ```
@@ -92,6 +94,7 @@ Choose one of the following (1-5):
 **Steg 3:** Välj alternativ 1 i huvudmenyn "Add new lifting session"
 
 **Din input**
+
 Efter att ha valt alternativ 1, kommer applikationen be dig om information för att skapa en ny lifting session. Använd följande input-data för de olika frågeställningarna:
 
 ```
@@ -105,6 +108,7 @@ Do you want to add another lift to the session? (y/n): n
 ```
 
 **Förväntat resultat/Output**
+
 Efter du valt "n" på sista frågeställningen ska applikationen skriva ut:
 
 ```
@@ -114,6 +118,7 @@ You have successfully added the lifting session!
 **Steg 4:** Välj alternativ 2 i huvudmenyn
 
 **Förväntat resultat/Output**
+
 Applikationen ska skriva ut 6 olika alternativ för att visa användaren statistik. Det ska presenteras som följande:
 
 ```
@@ -132,5 +137,7 @@ Choose one of the following (1-6):
 **Förväntat resultat/Output**
 
 The heaviest lift out of all lifts is: 90 kg
+
+---
 
 Du kan nu fortsätta utforska applikationen!
