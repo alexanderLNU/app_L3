@@ -208,16 +208,12 @@ Tycker ändå L3 är bra med just SRP, jag använder privata fält till min för
 
 #### **Allmänn reflektion**
 
----
-
-#### **L2 reflektion**
+Det stora jag tar med från detta kapitlet är att så länge ett system är välorganiserat så kan det växa inkrementellt, samt att arkitekturer i system ska, kan och bör utvecklas och även faktoreras. De förklarar också att det är viktigt att separera användningen från konstruktionen så att det går att vidareutveckla en del utan att förstöra eller påverka en annan del. De gör liknelsen med en stad att modulära och decentraliserade system underlättar för systemet att skalas upp och underhållas. Kapitlet tar även upp exempelvis "Dependency Injection".
 
 ---
 
-#### **L3 reflektion**
+#### **Reflektion på min kod:**
 
-![Kod-screenshot]()
+Jag har varit inne på det innan men jag tycker att mina klasser ändå har ett uppdelat ansvar, jag har försökt skapa en klass för varje syfte som måste uppnås i min kod. Jag tycker ändå de är relativt avskilda från varandra i syfte och innehåll. Jag har försökt tänka på det boken tar upp om modulariseing och att klasserna har sitt egna ansvar och sedan skapa en testfil för varje klass. Då kan jag, enligt mig själv, jobba vidare i en del av koden utan att förstöra annan del eller behöva åtgärda för mycket. Detta har i alla fall varit tanken även om det inte är optimalt utfört. Dock i efterhand när man dyker djupare i litteraturen ännu en gång så kan Dependency Injection varit ett mönster jag skulle använt, exempelvis då att WeightCollection inte ska instansieras direkt i klasser utan då möjligen injectas, bara en tanke som slått mig i efterhand. Se bild nedan.
 
-![Kod-screenshot]()
-
-![Kod-screenshot]()
+![Kod-screenshot](../images/constructorimg.png)
