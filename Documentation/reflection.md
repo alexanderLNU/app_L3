@@ -82,6 +82,114 @@ Här är exempel på hur min JSDoc kan se ut:
 
 #### **Allmänn reflektion**
 
+Detta kapitel visar och förklarar i både text och kodexempel hur viktigt det är att ha en struktur på sin kod som är läsbar och konsekvent hela tiden. Det handlar om att koden ska kunna vara underhållbar och förståelig dels för teamet men även framtida utvecklare som kommer arbeta i kodbasen. Boken beskriver att team bör ha en kodstandard för formattering så att koden inte är olika i hela kodbasen. Sammanfattningsvis tycker jag kapitlet redogör för hur viktigt det är att koden är förståelig, läsbar och enhetlig, det kan vi inte uppnå utan formattering.
+
+#### **L2 reflektion**
+
+Jag tycker att jag, i min modul, har en bra funktionell uppdelning och att funktioner är tydligt separerade från varandra, att det finns en konsekvent vertikal seperation genom projektet med tomrader, samt horisontell densitet. Jag vet med säkerhet att det kan bli bättre och att jag kan öka läsbarheten men jag är överlag nöjd med hur mitt projekt ser ut och jag tror andra utvecklare skulle finna modulen relativt enkel att läsa av och arbeta i.
+
+---
+
+#### **L3 reflektion**
+
+Eftersom jag använt samma kodstandard och regler i både modulen och appen är min reflektion väldigt lik här. Men jag ser reflektionsdelen av denna uppgiften som ett tillfälle att lära sig, därför skulle jag rikta lite självkritik mot mig själv som jag anser hör hemma till ämnet formattering. Mina metoder har en tendens att ibland bli lite längre än vad de behöver, ibland är det dock svårt och man halvt tvingas till att en metod ska göra flera saker för smidighetens skull i stunden. Ett exempel på detta är `addNewLiftingSession ()`. Jag hade säkerligen kunnat separera denna metoden ut i flera olika istället för bland annat, användarinmatning och validering. Men det handlar dels om kompetensbrist men även tid för min del. Men jag tycker formattering över lag är mycket god i båda mina projekt för att ge positiv feedback! Men jag skulle kunna ha fler tomrader för att öka läsbarheten ytterligare.
+
+![Kod-screenshot](../images/addnewliftmenu.png)
+
+## Kapitel 6 - Objects and Data Structures
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+## Kapitel 7 - Error Handling
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+## Kapitel 8 - Boundaries
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+## Kapitel 9 - Unit Tests
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+## Kapitel 10 - Classes
+
+#### **Allmänn reflektion**
+
+---
+
+#### **L2 reflektion**
+
+---
+
+#### **L3 reflektion**
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+![Kod-screenshot]()
+
+## Kapitel 11 - Systems
+
+#### **Allmänn reflektion**
+
 ---
 
 #### **L2 reflektion**
