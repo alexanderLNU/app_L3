@@ -202,7 +202,7 @@ Tycker ändå L3 är bra med just SRP, jag använder privata fält till min för
 
 ![Kod-screenshot](../images/duplkodmodulenkaptio.png)
 
-![Kod-screenshot](../images/classimage.png)
+![Kod-screenshot](../images/classimg.png)
 
 ## Kapitel 11 - Systems
 
