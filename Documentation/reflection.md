@@ -100,19 +100,19 @@ Eftersom jag använt samma kodstandard och regler i både modulen och appen är 
 
 #### **Allmänn reflektion**
 
----
-
-#### **L2 reflektion**
+I detta kapitel talar författaren bland annat om att det är ett vanligt misstag att exponera objekts privata data genom exempelvis getters och setters och att det så kallat "undergräver" abstraktionens syfte. I stort handlar kapitlet om skillnaderna och att objekt döljer data och sedan exponerar detta med hjälp av funktioner/metoder och att datastrukturer exponerar sin. Något som boken tar upp är "The Law of Demeter" som i stort handlar om att objekt inte ska känna till andra objekts inre infromation som de interagerar med och att det finns risk för train-wrecks som de skriver.
 
 ---
 
-#### **L3 reflektion**
+#### **Reflektioner i min kod**
 
-![Kod-screenshot]()
+Jag har försökt, enligt upopgiftens krav, att utveckla mina projekt så pass objektorienterat som jag kan. Jag tycker att det är utmanande med det objektorienterade tankesättet och därför tror jag att jag lätt kan "råka" bryta lite mot principerna. Dock har jag använt privata fält för att dölja dessa och följa det som boken tar om the law of demeter, nedan finns exempel i bilder. Jag har också försökt att använda getters och setters då det är nödvändigt och jag har även fokuserat på att försöka att göra så det inte bryter mot abstraktionerna. Tanken har varit att hämta data utan att exponera den direkt och generellt minimerar hur mycket data jag exponerar. Men jag vet att jag ibland exponerar interna strukturer men det viktiga är att jag tar lärdom av det då objektorienterad programmering är en stor utmaning för mig.
 
-![Kod-screenshot]()
+---
 
-![Kod-screenshot]()
+![Kod-screenshot](../images/privatafalt.png)
+
+![Kod-screenshot](../images/getliftstats.png)
 
 ## Kapitel 7 - Error Handling
 
