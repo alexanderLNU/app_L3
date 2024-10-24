@@ -160,19 +160,25 @@ Om jag tolkar denna del rätt så tycker jag ändå att jag gjort ett relativt b
 
 #### **Allmänn reflektion**
 
+I boken förklarar författaren att det är viktigt att man inte bara håller sin "production-code" ren, utan även testkoden ska vara på samma nivå och är lika viktig. De tar upp olika principer där den jag är mest intresserad av är "Test Driven Development" då jag hört från bekanta att många bolag arbetar med det tillvägegångssättet. Det handlar kort om att man skriver sina tester innan man skriver den faktiska koden och processen som jag förstått kan vara att man tar fram kraven tydligt tidigt, sedan utformar tester utefter det och sedan bygger vidare med faktisk produktionskod. I det stora förklarar de att det är viktigt att testkoden är uttrycksfull, enkel att förstå och att den har hög läsbarhet. De beskriver också vikten av att testkoden ska vara självvaliderande, snabb och oberoende för att de ska vara enkla att underhålla helt enkelt. Bra testkod leder också till en bättre produktionskod.
+
 ---
 
 #### **L2 reflektion**
+
+Trots att man är rookie så tycker jag en positiv aspekt i mina tester är delar utifrån det boken säger om F.I.R.S.T att jag tycker mina tester är relativt tydliga och att de checkar ett visst beteende i testet (expect t ex). De validerar också sig själva som de nämner i boken "Self-Validating" att de meddelar ifall det gått bra eller inte helt enkelt. Negativa delar dock är att jag upplever min testkod som repetativ, alltså lite brytande mot DRY om nu denna kod ska vara lika ren som produktionskoden. Jag är inte helt säker på om eller hur detta kan lösas, men jag tror inte mina automatiska tester är optimala när jag kollar varje enhet och så vidare, det är många väldigt liknande tester som tar många rader kod. Får kika vidare på det. Efter att ha läst kapitlet kan jag också i framtiden beakta "Domain-Specific Testing Language", kände inte till detta alls innan men det hade säkerligen ökat läsbarheten i min testkod som de beskriver i boken är en av fördelarna.
 
 ---
 
 #### **L3 reflektion**
 
-![Kod-screenshot]()
+Jag tycker väl egentligen det är samma reflektion här, automatiska tester är något nytt för mig men jag tycker väl de är enkla att förstå och att jag testar det mesta som går. Men samma kritik som ovan går att ge på testerna i L3 med.
 
-![Kod-screenshot]()
+---
 
-![Kod-screenshot]()
+![Kod-screenshot](../images/modultestexempel.png)
+
+![Kod-screenshot](../images/modultesttva.png)
 
 ## Kapitel 10 - Classes
 
