@@ -144,19 +144,17 @@ Något jag tycker är viktigt att nämna är också att Daniel tagit upp att val
 
 #### **Allmänn reflektion**
 
----
-
-#### **L2 reflektion**
+I kapitel 8 om boundaries handlar om hur man ska behandla gränser och gränssnitt mellan tredjepartskomponenter, externa system och sin egen kod bland annat. Det handlar om att man ska minska beroenden och att förändringar som sker i exempelvis andra paket du använder inte ska påverka din kod extremt mycket, utan minska det beroendet. De delar kunskap om detta och att man kan bemöta denna problematik genom att skriva tester för kod som kommer utifrån, men även att man kan isolera just den koden i valda delar. Då kan man i alla fall bättre hantera problematiken som kan uppstå utan att det påverkar hela applikationen på ett mycket negativt sätt.
 
 ---
 
-#### **L3 reflektion**
+#### **L2 & L3 reflektion**
 
-![Kod-screenshot]()
+Om jag tolkar denna del rätt så tycker jag ändå att jag gjort ett relativt bra jobb med att skapa mina egna abstraktioner som jag ser som ett "lager" mellan modulen och min app. Jag skulle dock helt klart kunna förbättra detta genom ytterligare inkapsling för just nu anropar jag exempelvids WeightCollection i PerformanceLog och jag skulle möjligen kunna minska detta beroendet om jag hade skapat en mer abstrakt "representation" av den klassen istället, jag tänker att det potentiellt skulle kunna minska beorendet något. Boken tar också upp "Learning Tests" och det känner jag väl inte att jag implementerat, men det är helt klart en förbättringsåtgärd för att vid tredjepartskod så kan vi se om den beter sig annorlunda när en uppdatering sker av just det paketet, bra att använda sig av i framtiden, speciellt när flera paket är inblandade känner jag.
 
-![Kod-screenshot]()
+---
 
-![Kod-screenshot]()
+![Kod-screenshot](../images/avgweightboundaries.png)
 
 ## Kapitel 9 - Unit Tests
 
