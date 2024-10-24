@@ -124,7 +124,7 @@ En av alla viktiga delar för att skriva "Clean Code" är just felhantering men 
 
 #### **L2 reflektion**
 
-Jag refaktorerade L2 en hel del som jag visade med screenshots i testrapporten, en del i det arbetet var att bryta ut metoder i flera metoder, specifikt valideringsmetoder. Då uppfyller jag reglerna ganska väl i Clean Code enligt mig eftersom jag anropar valideringsmetoden inuti de andra metoderna - istället för att ha valideringen direkt i metoden och bryta mot Do One Thing bland annat. Första bilden nedan är ett exempel på min metod fromTextInput som resulterade i tre ytterligare metoder: `validateTextInput ()`, `validateUnitInput ()` och `parseUserInput ()`. Jag är nöjd med den refaktoriseringen och jag tycker ändå att jag till min förmåga uppfyller kapitlet väl med tanke på korrigeringarna.
+Jag refaktorerade L2 en hel del som jag visade med screenshots i testrapporten, en del i det arbetet var att bryta ut metoder i flera metoder, specifikt valideringsmetoder. Då uppfyller jag reglerna ganska väl i Clean Code enligt mig eftersom jag anropar valideringsmetoden inuti de andra metoderna - istället för att ha valideringen direkt i metoden och bryta mot Do One Thing bland annat. Första bilden nedan är ett exempel på min metod fromTextInput som resulterade i tre ytterligare metoder: `validateTextInput ()`, `validateUnitInput ()` och `parseUserInput ()`. Jag är nöjd med den refaktoriseringen och jag tycker ändå att jag till min förmåga uppfyller kapitlet väl med tanke på korrigeringarna. **OBS!** Trots detta positiva har modulen en hel del validering DIREKT i metoderna vilket enkelt hade kunnat ersättas med metodanrop, det är något jag missat och det är inte bra alls. Valideringen måste centraliseras!
 
 ---
 
@@ -184,19 +184,25 @@ Jag tycker väl egentligen det är samma reflektion här, automatiska tester är
 
 #### **Allmänn reflektion**
 
+Detta kapitel redogör att det är viktigt att klasser ska vara små och ha ett specifikt ansvar, precis som boken säger om funktioner. Författarna förklarar hur viktigt deet är att fokusera på just klassdesign för att organisera kod på en "högre" nivå. Bra klasser menar de leder till en mer underhållbar kod som dessutom är mycket renare, det uppnås genom bland annat tydlig separation mellan privata och publika metoder, men även sammanhållning mellan instance variables och metoder. I kapitlet tar de även upp OCP och SRP som principer för att strukturera klasser för att underhållbarheten b.l.a ska vara god.
+
 ---
 
 #### **L2 reflektion**
+
+Jag tycker ändå jag lyckats bra med SRP i båda klasserna för modulen. De har varsett fokus på vad just de ska göra. Validering är bra då jag fångar dessa tidigt i Weight-klassen till exempel men de är inte egna metoder i min nuvarande lösning på modulen. En negativ aspekt gällande de är också att det blir lite duplicering med mina valideringar. Jag tycker även jag kan bryta ut i ännu fler metoder för att hålla mig till bokens regler om DRY, jag hade kunnat implementera en hjälpfunktion till mina metoder för att undvika dupliceringen som är just nu. Samma sak med valideringen i dessa metoder, ett exempel finns nedan i bild. Valideringen måste centraliseras MYCKET bättre.
 
 ---
 
 #### **L3 reflektion**
 
-![Kod-screenshot]()
+Tycker ändå L3 är bra med just SRP, jag använder privata fält till min förmåga för att arbeta med inkapsling och valideringen har jag försökt bryta ut i metoder för att undvika duplicering. Tycker dock även här att man kan samla alla dessa valideringsmetoder och slippa duplicering ytterliggare genom att ha en gemensam valideringslösning så här i efterhand. Menu-klassen tycker jag har lite långa metoder så klart, det kan brytas ut mycket mer än vad det är men jag tror att jag blundade lite för det eftersom det är så mycket utskrifter och det var i slutskedet av min apps utveckling. Men definitivt något som kan förbättras. Jag tror den gemensamma nämnaren kan vara att försöka minska dupliceringen av kod på många olika sätt, rookie som man är!
 
-![Kod-screenshot]()
+---
 
-![Kod-screenshot]()
+![Kod-screenshot](../images/duplkodmodulenkaptio.png)
+
+![Kod-screenshot](../images/classimage.png)
 
 ## Kapitel 11 - Systems
 
