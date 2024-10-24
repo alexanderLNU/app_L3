@@ -118,19 +118,27 @@ Jag har försökt, enligt upopgiftens krav, att utveckla mina projekt så pass o
 
 #### **Allmänn reflektion**
 
+En av alla viktiga delar för att skriva "Clean Code" är just felhantering men det kan vara svårt med felhantering då det lätt kan göra koden svår att läsa. Boken förklarar att det är viktigt att ha en separation mellan själva "huvudlogiken" och felhanteringen för att undvika detta. De tar också upp att felkoder inte är att föredra, utan istället kasta undantag och att dessa undantag ska ge tillräckligt med kontext.
+
 ---
 
 #### **L2 reflektion**
+
+Jag refaktorerade L2 en hel del som jag visade med screenshots i testrapporten, en del i det arbetet var att bryta ut metoder i flera metoder, specifikt valideringsmetoder. Då uppfyller jag reglerna ganska väl i Clean Code enligt mig eftersom jag anropar valideringsmetoden inuti de andra metoderna - istället för att ha valideringen direkt i metoden och bryta mot Do One Thing bland annat. Första bilden nedan är ett exempel på min metod fromTextInput som resulterade i tre ytterligare metoder: `validateTextInput ()`, `validateUnitInput ()` och `parseUserInput ()`. Jag är nöjd med den refaktoriseringen och jag tycker ändå att jag till min förmåga uppfyller kapitlet väl med tanke på korrigeringarna.
 
 ---
 
 #### **L3 reflektion**
 
-![Kod-screenshot]()
+I och med refaktoriseringen jag gjorde på mina metoder i L2 så försökte jag behålla samma tankesätt i L3. Att jag bryter ut det i flera metoder och anropar de, istället för att ha extremt mycket kod i varje funktion - som dessutom gör flera olika saker, vilket inte är bra. Jag tar med exempel på det nedan också hur jag använt detta.
 
-![Kod-screenshot]()
+Något jag tycker är viktigt att nämna är också att Daniel tagit upp att validering i constructorn är en bra grej, jag försökte få med det också och ta till mig den informationen! (Se bild på det nedan med)
 
-![Kod-screenshot]()
+![Kod-screenshot](../images/validateltva.png)
+
+![Kod-screenshot](../images/valexempel.png)
+
+![Kod-screenshot](../images/valconstructor.png)
 
 ## Kapitel 8 - Boundaries
 
